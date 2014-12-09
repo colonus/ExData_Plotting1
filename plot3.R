@@ -1,7 +1,9 @@
 # 08.11.14
 # coursera: exploratory data analysis
 # course project 1
-# plot 2
+# plot 3
+
+Sys.setlocale("LC_TIME", "English") # set local time to english
 
 require(data.table)
 

@@ -3,6 +3,8 @@
 # course project 1
 # plot 2
 
+Sys.setlocale("LC_TIME", "English") # set local time to english
+
 require(data.table)
 
 classes <- c("character","character","numeric","numeric","numeric","numeric","numeric","numeric","numeric")

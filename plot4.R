@@ -1,7 +1,9 @@
 # 08.11.14
 # coursera: exploratory data analysis
 # course project 1
-# plot 2
+# plot 4
+
+Sys.setlocale("LC_TIME", "English") # set local time to english
 
 require(data.table)
 
@@ -17,7 +19,7 @@ datetime <- strptime(datetime, "%d/%m/%Y %X")
 
 png("plot4.png",480,480)
 par(mfrow = c(2, 2))
-with(data, plot(datetime,Global_active_power,type="l",ylab = "Global Active Power (kilowatts)",xlab = ""))
+with(data, plot(datetime,Global_active_power,type="l",ylab = "Global Active Power",xlab = ""))
 with(data, plot(datetime,Voltage,type="l",ylab = "Voltage"))
 with(data, plot(datetime,Sub_metering_1,ylab = "Energy sub metering",xlab = "",type = "n"))
 with(data, points(datetime,Sub_metering_1,type="l"))
